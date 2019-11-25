@@ -1,0 +1,397 @@
+
+	1  ip a s
+    2  ip addr show
+    3  ip a s
+    4  hostnamectl
+    5  clear
+    6  yum update -y
+    7  hostname
+    8  uname -r
+    9  uname -a
+   10  cat /etc/redhat-release
+   11  history
+   12  rpm -qa | grep git
+   13  yum info git
+   14  yum install git
+   15  rpm -qa | grep git
+   16  yum info git
+   17  git --version
+   18  yum remove git
+   19  git --version
+   20  rpm -qa | grep git
+   21  yum info git
+   22  yum install git
+   23  history
+   24  git config --global --edit
+   25  rpm -qa | grep git
+   26  git config --global --edit
+   27  pwd
+   28  cd ..
+   29  pwd
+   30  ls -ltr
+   31  mkdir practice_git
+  32  cd practice_git/
+   33  ls -ltr
+   34  git clone https://github.com/ADINARAYANARAYANI/GIt_Work.git
+   35  touch one{1..2}
+   36  ls -ltr
+   37  git status
+   38  ls -ltr
+   39  cd GIt_Work/
+   40  ls -ltr
+   41  ls -ltra
+   42  touch one{1..4}
+   43  ls -ltr
+   44  git status
+   45  git add one1 one2 one3 one4
+   46  git status
+   47  git rm --cached one1
+   48  git status
+   49  git add one1
+   50  git status
+   51  git commit -m "initial commit"
+   52  git status
+   53  git log
+   54  git push
+   55  git pull
+   56  git branch
+   57  git pull origin master
+   58  git push origin master
+   59  history
+   60  rpm -qa | grep git
+   61  cd /
+   62  ls -ltr
+   63  cd practice_git/
+   64  ls -ltr
+   65  cd GIt_Work/
+   66  ls -ltr
+   67  ls -ltra
+   68  git config --global --edit
+   69  git config --global user.name "ADINARAYANARAYANI"
+   70  git config --global user.email "adi12.perl@gmail.com"
+   71  git config --global --edit
+   72  ls -ltr
+   73  git log
+   74  vi one1
+   75  git status
+   76  git checkout one1
+   77  git status
+   78  vi one1
+   79  cd ..
+   80  rpm -qa | grep java
+   81  yum install jenkins
+   82  yum install java-1.8.0-openjdk-devel
+   83  rpm -qa | grep java
+   84  curl --silent --location http://pkg.jenkins-ci.org/redhat-stable/jenkins.repo | sudo tee /etc/yum.repos.d/jenkins.repo
+   85  rpm --import https://jenkins-ci.org/redhat/jenkins-ci.org.key
+   86  cat /etc/yum.repos.d/jenkins.repo
+   87  yum install jenkins
+   88  rpm -qa | grep jenkins
+   89  yum info jenkins
+   90  ps -aef | grep jenkins
+   91  systemctl status jenkins
+   92  systemctl start jenkins
+   93  cat /var/lib/jenkins/secrets/initialAdminPassword
+   94  systemctl status sshd
+   95  systemctl enable jenkins
+   96  systemctl status  jenkins
+   97  systemctl enable  jenkins
+   98  systemctl stop jenkins
+   99  systemctl status  jenkins
+  100  rpm -qa | grep jenkins
+  101  rpm -e jenkins-2.176.2-1.1.noarch
+  102  rpm -qa | grep jenkins
+  103  ls
+  104  clear
+  105  ls -ltr
+  106  cd GIt_Work/
+ 107  clear
+  108  ls
+  109  clear
+  110  ls -ltr
+  111  vim one4
+  112  vi one4
+  113  ls -ltr
+  114  git -- version
+  115  clear
+  116  git --version
+  117  dpkg -l
+  118  rpm -qa
+  119  cleare
+  120  clear
+  121  git diff
+  122  clear
+  123  vi .gitignore
+  124  vi credentials
+  125  ls
+  126  clear
+  127  git status
+  128  git add one4 .gitignore
+  129  git status
+  130  git commit
+  131  git log
+  132  clear
+  133  git commit -m "this is second commit"
+  134  git status
+  135  clear
+ 136  git log
+  137  clear
+  138  ls -ltr
+  139  vi credentials2
+  140  git status
+  141  vi .gitignore
+  142  git status
+  143  vi .gitignore
+  144  git status
+  145  git add .gitignore
+  146  git status
+  147  git commit .
+  148  git commit -m "this is third commit"
+  149  clear
+  150  git log --oneline
+  151  remote -v
+  152  remote --v
+  153  remote -V
+  154  clear
+  155  git push origion master
+  156  ls
+  157  clear
+  158  ls -ltr
+  159  git status
+  160  ssh -i "GitPractice.pem" ec2-user@ec2-13-234-112-176.ap-south-1.compute.amazonaws.com
+  161  ls -ltr
+  162  git status
+  163  git push origin master
+  164  clear
+  165  cd /home/
+  166  ls
+  167  cd ec2-user/
+  168  ls
+  169  .ssh
+  170  cd .ssh/
+  171  ls
+  172  pwd
+  173  cd /home/ec2-user/
+  174  ls
+  175  ls -al
+  176  cd .ssh/
+  177  ls
+  178  cd authorized_keys
+  179  ls -al
+  180  vi authorized_keys
+  181  clear
+  182  git branch
+  183  cd
+  184  ls
+  185  cd GIt_Work/
+  186  git branch
+  187  cler
+  188  clear
+  189  git branch
+  190  ls -ltr
+  191  git remote -v
+  192  cd GIt_Work/
+  193  git remote -v
+  194  git pull
+  195  git status
+  196  clear
+  197  git pull
+  198  clear
+  199  git status
+  200  git log
+  201  clear
+  202  ls -ltr
+  203  cd GIt_Work/
+  204  clear
+  205  git checkout -b dev
+  206  git branch
+  207  vi dev1
+  208  vi dev2
+  209  vi dev3
+  210  clear
+  211  git status
+  212  git add .
+  213  git status
+  214  git commit -m "this is first dev commit"
+  215  clear
+  216  git status
+  217  git log
+  218  clear
+  219  git branch
+  220  git status
+  221  git log --oneline
+  222  clear
+  223  ls -ltr
+  224  git bravch
+  225  git branch
+  226  vi dev4
+  227  clear
+  228  git status
+  229  git add dev4
+  230  git status
+ 231  git commit -m "tis is second commit from dev"
+  232  clear
+  233  git log --oneline
+  234  ls -ltr
+  235  vi dev1
+  236  git branch
+  237  git status
+  238  git add dev1
+  239  git status
+  240  git commit dev1
+  241  git commit -m "this is third commit"
+  242  clear
+  243  git log
+  244  clear
+  245  git ls-files
+  246  clear
+  247  git branch
+  248  git log --oneline
+  249  git checkout master
+  250  git branch
+  251  git merge dev
+  252  git log --oneline
+  253  git checkout dev
+  254  git branch
+  255  git push origin dev
+  256  clear
+  257  git log --oneline
+  258  git remite -v
+  259  clear
+  260  git remote -v
+  261  netstat -plntu
+  262  clear
+  263  netstat -plntu
+  264  netstat -anp | grep 8080
+  265  clear
+  266  ls -ltr
+  267  git
+  268  clear
+  269  git --version
+  270  yum update -y
+  271  yum install jenkins
+  272  yum info jenkins
+  273  yum info java
+  274  clear
+  275  java --version
+  276  java -version
+  277  sudo yum install java
+  278  yum remove java
+  279  clear
+  280  java -version
+  281  sudo yum install java
+  282  clear
+  283  java -version
+  284  sudo wget -O /etc/yum.repos.d/jenkins.repo http://pkg.jenkins-ci.org/redhat-stable/jenkins.repo
+  285  sudo rpm --import https://jenkins-ci.org/redhat/jenkins-ci.org.key
+  286  sudo yum install jenkins
+  287  yum info jenkins
+  288  yum update -y
+  289  clear
+  290  /var/log/jenkins/jenkins.log
+  291  cat /var/log/jenkins/jenkins.log
+
+
+======================================
+
+ADINARAYANARAYANI
+ADINARAYANARAYANI
+adi12.perl@gmail.com
+
+sudo u -
+
+ip a s
+
+hostname
+
+hostnamectl
+
+2  ip addr show
+    3  ip a s
+    4  hostnamectl
+    5  clear
+    6  yum update -y
+    7  hostname
+    8  uname -r
+    9  uname -a
+   10  cat /etc/redhat-release
+   11  history
+   
+    13  yum info git
+   14  yum install git
+   15  rpm -qa | grep git
+   16  yum info git
+   17  git --version
+   18  yum remove git
+   19  git --version
+   20  rpm -qa | grep git
+   21  yum info git
+   22  yum install git
+
+   https://github.com/ADINARAYANARAYANI/GIt_Work.git
+   
+   git commands
+   =============
+   …or create a new repository on the command line
+echo "# GIt_Work" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin git@github.com:ADINARAYANARAYANI/GIt_Work.git
+git push -u origin master
+
+
+
+…or push an existing repository from the command line
+git remote add origin git@github.com:ADINARAYANARAYANI/GIt_Work.git
+git push -u origin maste
+
+
+
+7  mkdir practice_git
+    8  cd practice_git/
+    9  ls -ltr
+   10  git clone https://github.com/ADINARAYANARAYANI/GIt_Work.git
+   11  touch one{1..2}
+   12  ls -ltr
+   13  git status
+   14  ls -ltr
+   15  cd GIt_Work/
+   16  ls -ltr
+   17  ls -ltra
+   18  touch one{1..4}
+   19  ls -ltr
+   20  git status
+   21  git add one1 one2 one3 one4
+   22  git status
+   23  git rm --cached one1
+   24  git status
+   25  git add one1
+   26  git status
+   27  git commit -m "initial commit"
+   28  git status
+   29  git log
+   30  git push
+   31  git pull
+   32  git branch
+   33  git pull origin master
+   34  git push origin master
+   
+   
+   git config --global user.name "ADINARAYANARAYANI"
+   git config --global user.email "adi12.perl@gmail.com"
+   
+   8186874987
+   
+ ======MY PRACTICE=====
+
+ Installation of an LTS version
+There is also a LTS YUM repository for the LTS Release Line
+
+sudo wget -O /etc/yum.repos.d/jenkins.repo http://pkg.jenkins-ci.org/redhat-stable/jenkins.repo    =========> command not executed
+sudo rpm --import https://jenkins-ci.org/redhat/jenkins-ci.org.key
+sudo yum install jenkins
+
+
+adinarayana
+
